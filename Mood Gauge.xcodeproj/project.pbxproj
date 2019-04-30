@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E43227908FA00F7BF56 /* AppDelegate.swift */; };
+		79196E46227908FA00F7BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* ViewController.swift */; };
+		79196E49227908FA00F7BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E47227908FA00F7BF56 /* Main.storyboard */; };
+		79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */; };
+		79196E4E227908FC00F7BF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79196E4D227908FC00F7BF56 /* Assets.xcassets */; };
+		79196E51227908FC00F7BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */; };
+		79196E5C227908FC00F7BF56 /* Mood_GaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E5B227908FC00F7BF56 /* Mood_GaugeTests.swift */; };
+		79196E67227908FC00F7BF56 /* Mood_GaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E66227908FC00F7BF56 /* Mood_GaugeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79196E58227908FC00F7BF56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79196E38227908FA00F7BF56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79196E3F227908FA00F7BF56;
+			remoteInfo = "Mood Gauge";
+		};
+		79196E63227908FC00F7BF56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79196E38227908FA00F7BF56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79196E3F227908FA00F7BF56;
+			remoteInfo = "Mood Gauge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79196E40227908FA00F7BF56 /* Mood Gauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Gauge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79196E43227908FA00F7BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79196E45227908FA00F7BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79196E48227908FA00F7BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79196E4B227908FA00F7BF56 /* Mood_Gauge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mood_Gauge.xcdatamodel; sourceTree = "<group>"; };
+		79196E4D227908FC00F7BF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79196E50227908FC00F7BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79196E52227908FC00F7BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79196E57227908FC00F7BF56 /* Mood GaugeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood GaugeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79196E5B227908FC00F7BF56 /* Mood_GaugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_GaugeTests.swift; sourceTree = "<group>"; };
+		79196E5D227908FC00F7BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79196E62227908FC00F7BF56 /* Mood GaugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood GaugeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79196E66227908FC00F7BF56 /* Mood_GaugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_GaugeUITests.swift; sourceTree = "<group>"; };
+		79196E68227908FC00F7BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79196E3D227908FA00F7BF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E54227908FC00F7BF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E5F227908FC00F7BF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79196E37227908FA00F7BF56 = {
+			isa = PBXGroup;
+			children = (
+				79196E42227908FA00F7BF56 /* Mood Gauge */,
+				79196E5A227908FC00F7BF56 /* Mood GaugeTests */,
+				79196E65227908FC00F7BF56 /* Mood GaugeUITests */,
+				79196E41227908FA00F7BF56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79196E41227908FA00F7BF56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79196E40227908FA00F7BF56 /* Mood Gauge.app */,
+				79196E57227908FC00F7BF56 /* Mood GaugeTests.xctest */,
+				79196E62227908FC00F7BF56 /* Mood GaugeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79196E42227908FA00F7BF56 /* Mood Gauge */ = {
+			isa = PBXGroup;
+			children = (
+				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
+				79196E45227908FA00F7BF56 /* ViewController.swift */,
+				79196E47227908FA00F7BF56 /* Main.storyboard */,
+				79196E4D227908FC00F7BF56 /* Assets.xcassets */,
+				79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */,
+				79196E52227908FC00F7BF56 /* Info.plist */,
+				79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */,
+			);
+			path = "Mood Gauge";
+			sourceTree = "<group>";
+		};
+		79196E5A227908FC00F7BF56 /* Mood GaugeTests */ = {
+			isa = PBXGroup;
+			children = (
+				79196E5B227908FC00F7BF56 /* Mood_GaugeTests.swift */,
+				79196E5D227908FC00F7BF56 /* Info.plist */,
+			);
+			path = "Mood GaugeTests";
+			sourceTree = "<group>";
+		};
+		79196E65227908FC00F7BF56 /* Mood GaugeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79196E66227908FC00F7BF56 /* Mood_GaugeUITests.swift */,
+				79196E68227908FC00F7BF56 /* Info.plist */,
+			);
+			path = "Mood GaugeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79196E3F227908FA00F7BF56 /* Mood Gauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79196E6B227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood Gauge" */;
+			buildPhases = (
+				79196E3C227908FA00F7BF56 /* Sources */,
+				79196E3D227908FA00F7BF56 /* Frameworks */,
+				79196E3E227908FA00F7BF56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mood Gauge";
+			productName = "Mood Gauge";
+			productReference = 79196E40227908FA00F7BF56 /* Mood Gauge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79196E56227908FC00F7BF56 /* Mood GaugeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79196E6E227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood GaugeTests" */;
+			buildPhases = (
+				79196E53227908FC00F7BF56 /* Sources */,
+				79196E54227908FC00F7BF56 /* Frameworks */,
+				79196E55227908FC00F7BF56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79196E59227908FC00F7BF56 /* PBXTargetDependency */,
+			);
+			name = "Mood GaugeTests";
+			productName = "Mood GaugeTests";
+			productReference = 79196E57227908FC00F7BF56 /* Mood GaugeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79196E61227908FC00F7BF56 /* Mood GaugeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79196E71227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood GaugeUITests" */;
+			buildPhases = (
+				79196E5E227908FC00F7BF56 /* Sources */,
+				79196E5F227908FC00F7BF56 /* Frameworks */,
+				79196E60227908FC00F7BF56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79196E64227908FC00F7BF56 /* PBXTargetDependency */,
+			);
+			name = "Mood GaugeUITests";
+			productName = "Mood GaugeUITests";
+			productReference = 79196E62227908FC00F7BF56 /* Mood GaugeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79196E38227908FA00F7BF56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paul Baker";
+				TargetAttributes = {
+					79196E3F227908FA00F7BF56 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					79196E56227908FC00F7BF56 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 79196E3F227908FA00F7BF56;
+					};
+					79196E61227908FC00F7BF56 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 79196E3F227908FA00F7BF56;
+					};
+				};
+			};
+			buildConfigurationList = 79196E3B227908FA00F7BF56 /* Build configuration list for PBXProject "Mood Gauge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79196E37227908FA00F7BF56;
+			productRefGroup = 79196E41227908FA00F7BF56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79196E3F227908FA00F7BF56 /* Mood Gauge */,
+				79196E56227908FC00F7BF56 /* Mood GaugeTests */,
+				79196E61227908FC00F7BF56 /* Mood GaugeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79196E3E227908FA00F7BF56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79196E51227908FC00F7BF56 /* LaunchScreen.storyboard in Resources */,
+				79196E4E227908FC00F7BF56 /* Assets.xcassets in Resources */,
+				79196E49227908FA00F7BF56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E55227908FC00F7BF56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E60227908FC00F7BF56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79196E3C227908FA00F7BF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79196E46227908FA00F7BF56 /* ViewController.swift in Sources */,
+				79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */,
+				79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E53227908FC00F7BF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79196E5C227908FC00F7BF56 /* Mood_GaugeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79196E5E227908FC00F7BF56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79196E67227908FC00F7BF56 /* Mood_GaugeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79196E59227908FC00F7BF56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79196E3F227908FA00F7BF56 /* Mood Gauge */;
+			targetProxy = 79196E58227908FC00F7BF56 /* PBXContainerItemProxy */;
+		};
+		79196E64227908FC00F7BF56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79196E3F227908FA00F7BF56 /* Mood Gauge */;
+			targetProxy = 79196E63227908FC00F7BF56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79196E47227908FA00F7BF56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79196E48227908FA00F7BF56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79196E50227908FC00F7BF56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79196E69227908FC00F7BF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79196E6A227908FC00F7BF56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79196E6C227908FC00F7BF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Gauge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-Gauge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79196E6D227908FC00F7BF56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood Gauge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-Gauge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79196E6F227908FC00F7BF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood GaugeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-GaugeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Gauge.app/Mood Gauge";
+			};
+			name = Debug;
+		};
+		79196E70227908FC00F7BF56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood GaugeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-GaugeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mood Gauge.app/Mood Gauge";
+			};
+			name = Release;
+		};
+		79196E72227908FC00F7BF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood GaugeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-GaugeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Gauge";
+			};
+			name = Debug;
+		};
+		79196E73227908FC00F7BF56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mood GaugeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBaker.Mood-GaugeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mood Gauge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79196E3B227908FA00F7BF56 /* Build configuration list for PBXProject "Mood Gauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79196E69227908FC00F7BF56 /* Debug */,
+				79196E6A227908FC00F7BF56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79196E6B227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood Gauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79196E6C227908FC00F7BF56 /* Debug */,
+				79196E6D227908FC00F7BF56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79196E6E227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood GaugeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79196E6F227908FC00F7BF56 /* Debug */,
+				79196E70227908FC00F7BF56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79196E71227908FC00F7BF56 /* Build configuration list for PBXNativeTarget "Mood GaugeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79196E72227908FC00F7BF56 /* Debug */,
+				79196E73227908FC00F7BF56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79196E4B227908FA00F7BF56 /* Mood_Gauge.xcdatamodel */,
+			);
+			currentVersion = 79196E4B227908FA00F7BF56 /* Mood_Gauge.xcdatamodel */;
+			path = Mood_Gauge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79196E38227908FA00F7BF56 /* Project object */;
+}
