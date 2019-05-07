@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E43227908FA00F7BF56 /* AppDelegate.swift */; };
-		79196E46227908FA00F7BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* ViewController.swift */; };
+		79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* SettingsViewControler.swift */; };
 		79196E49227908FA00F7BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E47227908FA00F7BF56 /* Main.storyboard */; };
 		79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */; };
 		79196E4E227908FC00F7BF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79196E4D227908FC00F7BF56 /* Assets.xcassets */; };
 		79196E51227908FC00F7BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */; };
 		79196E5C227908FC00F7BF56 /* Mood_GaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E5B227908FC00F7BF56 /* Mood_GaugeTests.swift */; };
 		79196E67227908FC00F7BF56 /* Mood_GaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E66227908FC00F7BF56 /* Mood_GaugeUITests.swift */; };
+		79196E762279092100F7BF56 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79196E752279092100F7BF56 /* CoreData.framework */; };
+		79196E7822790BDC00F7BF56 /* AddNewMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7722790BDC00F7BF56 /* AddNewMoodViewController.swift */; };
+		79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */; };
+		79196E7C22822C8A00F7BF56 /* MoodDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */; };
+		79196E7E2282392A00F7BF56 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7D2282392A00F7BF56 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		79196E40227908FA00F7BF56 /* Mood Gauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Gauge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79196E43227908FA00F7BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79196E45227908FA00F7BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79196E45227908FA00F7BF56 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
 		79196E48227908FA00F7BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79196E4B227908FA00F7BF56 /* Mood_Gauge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mood_Gauge.xcdatamodel; sourceTree = "<group>"; };
 		79196E4D227908FC00F7BF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		79196E62227908FC00F7BF56 /* Mood GaugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mood GaugeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79196E66227908FC00F7BF56 /* Mood_GaugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood_GaugeUITests.swift; sourceTree = "<group>"; };
 		79196E68227908FC00F7BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79196E752279092100F7BF56 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79196E7722790BDC00F7BF56 /* AddNewMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMoodViewController.swift; sourceTree = "<group>"; };
+		79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsRecordsTableViewController.swift; sourceTree = "<group>"; };
+		79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDelegate.swift; sourceTree = "<group>"; };
+		79196E7D2282392A00F7BF56 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79196E762279092100F7BF56 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				79196E5A227908FC00F7BF56 /* Mood GaugeTests */,
 				79196E65227908FC00F7BF56 /* Mood GaugeUITests */,
 				79196E41227908FA00F7BF56 /* Products */,
+				79196E742279092100F7BF56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +111,16 @@
 		79196E42227908FA00F7BF56 /* Mood Gauge */ = {
 			isa = PBXGroup;
 			children = (
+				79196E802282405700F7BF56 /* Model */,
 				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
-				79196E45227908FA00F7BF56 /* ViewController.swift */,
+				79196E45227908FA00F7BF56 /* SettingsViewControler.swift */,
 				79196E47227908FA00F7BF56 /* Main.storyboard */,
+				79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */,
 				79196E4D227908FC00F7BF56 /* Assets.xcassets */,
 				79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */,
 				79196E52227908FC00F7BF56 /* Info.plist */,
 				79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */,
+				79196E7F2282400600F7BF56 /* Controllers */,
 			);
 			path = "Mood Gauge";
 			sourceTree = "<group>";
@@ -126,6 +141,31 @@
 				79196E68227908FC00F7BF56 /* Info.plist */,
 			);
 			path = "Mood GaugeUITests";
+			sourceTree = "<group>";
+		};
+		79196E742279092100F7BF56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79196E752279092100F7BF56 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79196E7F2282400600F7BF56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */,
+				79196E7D2282392A00F7BF56 /* AlertViewController.swift */,
+				79196E7722790BDC00F7BF56 /* AddNewMoodViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		79196E802282405700F7BF56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79196E46227908FA00F7BF56 /* ViewController.swift in Sources */,
+				79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */,
+				79196E7E2282392A00F7BF56 /* AlertViewController.swift in Sources */,
+				79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */,
 				79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */,
+				79196E7C22822C8A00F7BF56 /* MoodDelegate.swift in Sources */,
+				79196E7822790BDC00F7BF56 /* AddNewMoodViewController.swift in Sources */,
 				79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
