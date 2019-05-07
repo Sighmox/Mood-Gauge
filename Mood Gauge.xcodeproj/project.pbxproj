@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790E408122824B6900DEECF3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790E408022824B6900DEECF3 /* MapKit.framework */; };
 		79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E43227908FA00F7BF56 /* AppDelegate.swift */; };
 		79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* SettingsViewControler.swift */; };
 		79196E49227908FA00F7BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E47227908FA00F7BF56 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790E408022824B6900DEECF3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		79196E40227908FA00F7BF56 /* Mood Gauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Gauge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79196E43227908FA00F7BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79196E45227908FA00F7BF56 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790E408122824B6900DEECF3 /* MapKit.framework in Frameworks */,
 				79196E762279092100F7BF56 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +149,7 @@
 		79196E742279092100F7BF56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				790E408022824B6900DEECF3 /* MapKit.framework */,
 				79196E752279092100F7BF56 /* CoreData.framework */,
 			);
 			name = Frameworks;

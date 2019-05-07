@@ -10,6 +10,27 @@ import UIKit
 import CoreData
 
 class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, MoodDelegate {
+    func addNewMood(comment: String, happiness: Int16, date: Date, longitude: Float, latitude: Float) {
+        let moodsEntity = Moods(context: managedContext!)
+        moodsEntity.comment = comment
+        moodsEntity.happiness = happiness
+        moodsEntity.date = date
+        moodsEntity.longitude = longitude
+        moodsEntity.latitude = latitude
+        
+        do {
+            try managedContext!.save()
+        } catch {
+            managedContext!.reset()
+            showAlert(title: "Error", message: "Unable to add mood")
+            print("Error adding new mood", \(error)")
+        }
+    }
+    
+    func delete(moods: Moods) {
+        <#code#>
+    }
+    
     
     var managedContext: NSManagedObjectContext?
     var moodObjects: [Moods] = []
@@ -76,7 +97,7 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
             destination.moodDelegate = self
             
         default:
-            "What type of segue is this?"
+            print("What type of segue is this?")
             
         }
     }

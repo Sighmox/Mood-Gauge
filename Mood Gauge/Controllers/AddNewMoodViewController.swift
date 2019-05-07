@@ -8,8 +8,23 @@
 
 import UIKit
 import CoreData
+import Mapkit
 
-class AddNewMoodViewController: UIViewController {
+
+
+class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
+    
+    var locManager = CLLocationManager()
+    locManager.requestWhenInUseAuthorization()
+    
+    var currentLocation: CLLocation!
+    
+    if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
+    
+    currentLocation = locManager.location
+    }
+    
+    let date = NSDate()
     
     @IBOutlet weak var commentTextfield: UITextField!
     @IBOutlet weak var happySlider: UISlider!
@@ -41,6 +56,10 @@ class AddNewMoodViewController: UIViewController {
             return
         }
         
+        guard let latitude
+        
+        
+        moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: latitude, latitude: longitude)
         navigationController!.popViewController(animated: true)
         
     }
