@@ -66,7 +66,7 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
         }
     }
         
-        func conrtollerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
             moodObjects = controller.fetchedObjects as! [Moods]
             tableView.reloadData()
         }

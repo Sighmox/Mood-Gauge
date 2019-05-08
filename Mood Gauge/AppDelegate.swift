@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let controller = controller as? MoodsRecordsTableViewController {
                 controller.managedContext = managedContext
             }
+            
         }
         
         return true

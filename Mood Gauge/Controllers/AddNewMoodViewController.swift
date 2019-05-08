@@ -69,9 +69,10 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
         
         
         moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: Float(longitude), latitude: Float(latitude))
-        navigationController!.popViewController(animated: true)
+        
         
     }
+        navigationController!.popViewController(animated: true)
     }
 
    
