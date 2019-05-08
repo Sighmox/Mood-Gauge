@@ -19,6 +19,7 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
     
     let date = Date()
     
+    
     @IBOutlet weak var commentTextfield: UITextField!
     @IBOutlet weak var happySlider: UISlider!
     @IBOutlet weak var happySliderValue: UILabel!

@@ -22,14 +22,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVO-F1-ErF">
-                                    <rect key="frame" x="8" y="7" width="71" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Add Mood"/>
-                                    <connections>
-                                        <action selector="showAddMood:" destination="9Ot-3Z-wiB" eventType="touchUpInside" id="9lt-wE-6Vv"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sF-a8-y5w">
                                     <rect key="frame" x="279" y="8" width="88" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,6 +31,14 @@
                                     <rect key="frame" x="159" y="8" width="57" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Settings"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-yL-hOP">
+                                    <rect key="frame" x="8" y="7" width="71" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Add Mood"/>
+                                    <connections>
+                                        <segue destination="f5D-Xf-ND8" kind="show" id="ugH-VP-uGH"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,9 +59,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Tx8-YN-RhY"/>
-                    <connections>
-                        <segue destination="f5D-Xf-ND8" kind="show" identifier="AddNewMoodSegue" id="DYv-Xh-tLa"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVP-cN-Hct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,9 +77,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="commentTexfielf:" destination="f5D-Xf-ND8" eventType="editingDidEnd" id="jb7-WZ-gNh"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bF-6r-Zqp">
                                 <rect key="frame" x="170" y="479" width="35" height="30"/>
@@ -121,7 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="PqC-Yp-Zbg"/>
                     </view>
                     <connections>
-                        <outlet property="commentTextfield" destination="8Fy-94-JmW" id="OSG-Dc-ANj"/>
+                        <outlet property="commentTextfield" destination="8Fy-94-JmW" id="goG-6V-2zI"/>
                         <outlet property="happySlider" destination="h2a-eb-jny" id="iaW-rY-fpT"/>
                         <outlet property="happySliderValue" destination="L1n-Gq-83i" id="L93-my-D7g"/>
                     </connections>
