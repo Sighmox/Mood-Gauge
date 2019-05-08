@@ -52,16 +52,19 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
             showAlert(title: "Error", message: "Value must be between 1 and 10")
             return
         }
+        
         locManager.requestWhenInUseAuthorization()
         
         var currentLocation: CLLocation!
         
         if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
             
-            currentLocation = locManager.location
             
         }
-        func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+        currentLocation = locManager.location
+        
+       // func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
             
         
         let longitude = currentLocation.coordinate.longitude
@@ -71,9 +74,11 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
         
         moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: Float(longitude), latitude: Float(latitude))
         
-        
-    }
         navigationController!.popViewController(animated: true)
+    //}
+        
+        
+        
     }
 
    

@@ -80,7 +80,7 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
             
             let mood = moodObjects[indexPath.row]
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MoodTableCell")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MoodTableCell", for: indexPath)
             cell.textLabel?.text = mood.comment
             cell.detailTextLabel?.text = "\(mood.happiness) level of happiness out of 10"
             
