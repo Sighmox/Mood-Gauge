@@ -8,34 +8,30 @@
 
 import UIKit
 import CoreData
-import Mapkit
+import MapKit
 
 
 
 class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
     
     var locManager = CLLocationManager()
-    locManager.requestWhenInUseAuthorization()
     
-    var currentLocation: CLLocation!
     
-    if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
-    
-    currentLocation = locManager.location
-    }
-    
-    let date = NSDate()
+    let date = Date()
     
     @IBOutlet weak var commentTextfield: UITextField!
     @IBOutlet weak var happySlider: UISlider!
     @IBOutlet weak var happySliderValue: UILabel!
+    
     
     var moods: Moods?
     var moodDelegate: MoodDelegate?
     
     override func viewDidLoad() {
     super.viewDidLoad()
-        
+        func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+            
+        }
     
     }
     
@@ -55,15 +51,28 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
             showAlert(title: "Error", message: "Value must be between 1 and 10")
             return
         }
+        locManager.requestWhenInUseAuthorization()
         
-        guard let latitude
+        var currentLocation: CLLocation!
+        
+        if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways) {
+            
+            currentLocation = locManager.location
+            
+        }
+        func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+            
+        
+        let longitude = currentLocation.coordinate.longitude
+        
+        let latitude = currentLocation.coordinate.latitude
         
         
-        moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: latitude, latitude: longitude)
+        moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: Float(longitude), latitude: Float(latitude))
         navigationController!.popViewController(animated: true)
         
     }
-    
+    }
 
    
     

@@ -23,16 +23,17 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
         } catch {
             managedContext!.reset()
             showAlert(title: "Error", message: "Unable to add mood")
-            print("Error adding new mood", \(error)")
+            print("Error adding new mood, \(error)")
         }
     }
     
     func delete(moods: Moods) {
-        <#code#>
+        
     }
     
     
     var managedContext: NSManagedObjectContext?
+    var fetchResultsController: NSFetchedResultsController<Moods>?
     var moodObjects: [Moods] = []
     
     @IBAction func showAddMood(_ sender: Any) {
@@ -40,7 +41,6 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
         
     }
     
-    var fetchResultsController: NSFetchedResultsController<Moods>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
