@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		790E408122824B6900DEECF3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790E408022824B6900DEECF3 /* MapKit.framework */; };
+		7916CBCD2283C66D00A6328E /* MoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */; };
 		79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E43227908FA00F7BF56 /* AppDelegate.swift */; };
 		79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* SettingsViewControler.swift */; };
 		79196E49227908FA00F7BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E47227908FA00F7BF56 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		790E408022824B6900DEECF3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMapViewController.swift; sourceTree = "<group>"; };
 		79196E40227908FA00F7BF56 /* Mood Gauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Gauge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79196E43227908FA00F7BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79196E45227908FA00F7BF56 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
 				79196E45227908FA00F7BF56 /* SettingsViewControler.swift */,
 				79196E47227908FA00F7BF56 /* Main.storyboard */,
+				7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */,
 				79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */,
 				79196E4D227908FC00F7BF56 /* Assets.xcassets */,
 				79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */,
@@ -305,6 +308,7 @@
 			files = (
 				79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */,
 				79196E7E2282392A00F7BF56 /* AlertViewController.swift in Sources */,
+				7916CBCD2283C66D00A6328E /* MoodMapViewController.swift in Sources */,
 				79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */,
 				79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */,
 				79196E7C22822C8A00F7BF56 /* MoodDelegate.swift in Sources */,

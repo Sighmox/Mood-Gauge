@@ -44,12 +44,28 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoodTableCell" id="pxW-Vc-Prj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="MoodTableCell" textLabel="RTr-H1-dQd" detailTextLabel="TS1-nG-RT5" style="IBUITableViewCellStyleSubtitle" id="pxW-Vc-Prj">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pxW-Vc-Prj" id="aSc-2h-RnS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RTr-H1-dQd">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TS1-nG-RT5">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -124,14 +140,28 @@
             </objects>
             <point key="canvasLocation" x="1896.8" y="222.63868065967017"/>
         </scene>
-        <!--View Controller-->
+        <!--Mood Map View Controller-->
         <scene sceneID="AoU-Qc-XTe">
             <objects>
-                <viewController id="fRP-O0-pBR" sceneMemberID="viewController">
+                <viewController id="fRP-O0-pBR" customClass="MoodMapViewController" customModule="Mood_Gauge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBG-po-WhA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-6d-bQQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fRP-O0-pBR" id="Itb-Rk-YA0"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eRg-6d-bQQ" firstAttribute="leading" secondItem="wO7-Xo-Ocz" secondAttribute="leading" id="98i-YT-U4m"/>
+                            <constraint firstItem="wO7-Xo-Ocz" firstAttribute="trailing" secondItem="eRg-6d-bQQ" secondAttribute="trailing" id="EsW-i4-YWL"/>
+                            <constraint firstItem="wO7-Xo-Ocz" firstAttribute="bottom" secondItem="eRg-6d-bQQ" secondAttribute="bottom" id="Nx7-I8-7sn"/>
+                            <constraint firstItem="eRg-6d-bQQ" firstAttribute="top" secondItem="wO7-Xo-Ocz" secondAttribute="top" id="O9J-pO-dGd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wO7-Xo-Ocz"/>
                     </view>
                 </viewController>
