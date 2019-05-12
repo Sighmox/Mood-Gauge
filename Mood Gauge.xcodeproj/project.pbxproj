@@ -10,7 +10,6 @@
 		790E408122824B6900DEECF3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790E408022824B6900DEECF3 /* MapKit.framework */; };
 		7916CBCD2283C66D00A6328E /* MoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */; };
 		79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E43227908FA00F7BF56 /* AppDelegate.swift */; };
-		79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E45227908FA00F7BF56 /* SettingsViewControler.swift */; };
 		79196E49227908FA00F7BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79196E47227908FA00F7BF56 /* Main.storyboard */; };
 		79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79196E4A227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld */; };
 		79196E4E227908FC00F7BF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79196E4D227908FC00F7BF56 /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 		7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMapViewController.swift; sourceTree = "<group>"; };
 		79196E40227908FA00F7BF56 /* Mood Gauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mood Gauge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79196E43227908FA00F7BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79196E45227908FA00F7BF56 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
 		79196E48227908FA00F7BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79196E4B227908FA00F7BF56 /* Mood_Gauge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mood_Gauge.xcdatamodel; sourceTree = "<group>"; };
 		79196E4D227908FC00F7BF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			children = (
 				79196E802282405700F7BF56 /* Model */,
 				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
-				79196E45227908FA00F7BF56 /* SettingsViewControler.swift */,
 				79196E47227908FA00F7BF56 /* Main.storyboard */,
 				7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */,
 				79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */,
@@ -306,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79196E46227908FA00F7BF56 /* SettingsViewControler.swift in Sources */,
 				79196E7E2282392A00F7BF56 /* AlertViewController.swift in Sources */,
 				7916CBCD2283C66D00A6328E /* MoodMapViewController.swift in Sources */,
 				79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */,

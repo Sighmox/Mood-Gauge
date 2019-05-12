@@ -28,9 +28,12 @@
                                     <state key="normal" title="Delete Mood"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-qs-WoD">
-                                    <rect key="frame" x="159" y="8" width="57" height="30"/>
+                                    <rect key="frame" x="151" y="8" width="73" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Settings"/>
+                                    <state key="normal" title="Mood Map"/>
+                                    <connections>
+                                        <segue destination="fRP-O0-pBR" kind="show" id="sPL-t3-Xnx"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-yL-hOP">
                                     <rect key="frame" x="8" y="7" width="71" height="30"/>
@@ -149,7 +152,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-6d-bQQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <connections>
                                     <outlet property="delegate" destination="fRP-O0-pBR" id="Itb-Rk-YA0"/>
                                 </connections>
@@ -164,6 +167,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wO7-Xo-Ocz"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="eRg-6d-bQQ" id="DUa-h0-rDw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hru-Uc-FcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
