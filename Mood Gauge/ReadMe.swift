@@ -8,6 +8,9 @@
 
 /*
 
+ 
+ About:
+ 
  This app has been created to gauge a user's mood over a period of time and to be able to track what was
  on the user's mind.
  
@@ -19,5 +22,7 @@
  The user can look at the "mood map" and determine where they were and what type of mood they tend to be in
  when they are in a different locations.
  
- 
+ #imageLiteral(resourceName: "Screen Shot 2019-05-14 at 5.19.29 PM.png")
+ #imageLiteral(resourceName: "Screen Shot 2019-05-14 at 5.19.51 PM.png")
+ #imageLiteral(resourceName: "Screen Shot 2019-05-14 at 5.20.44 PM.png")
  */
