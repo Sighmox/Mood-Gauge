@@ -5,7 +5,6 @@
 //  Created by Paul Baker on 4/30/19.
 //  Copyright © 2019 Paul Baker. All rights reserved.
 //
-
 import UIKit
 import CoreData
 import MapKit
@@ -29,11 +28,11 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
     var moodDelegate: MoodDelegate?
     
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
         func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
             
         }
-    
+        
     }
     
     @IBAction func happySliderValueChange(_ sender: UISlider) {
@@ -64,8 +63,8 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
         
         currentLocation = locManager.location
         
-       // func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-            
+        // func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
         
         let longitude = currentLocation.coordinate.longitude
         
@@ -75,14 +74,12 @@ class AddNewMoodViewController: UIViewController, CLLocationManagerDelegate {
         moodDelegate!.addNewMood(comment: comment, happiness: happiness, date: date, longitude: Float(longitude), latitude: Float(latitude))
         
         navigationController!.popViewController(animated: true)
-    //}
+        //}
         
         
         
     }
-
-   
+    
+    
     
 }
-
-

@@ -117,7 +117,6 @@
 				79196E802282405700F7BF56 /* Model */,
 				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
 				79196E47227908FA00F7BF56 /* Main.storyboard */,
-				7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */,
 				79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */,
 				79196E4D227908FC00F7BF56 /* Assets.xcassets */,
 				79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */,
@@ -158,6 +157,7 @@
 		79196E7F2282400600F7BF56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7916CBCC2283C66D00A6328E /* MoodMapViewController.swift */,
 				79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */,
 				79196E7D2282392A00F7BF56 /* AlertViewController.swift */,
 				79196E7722790BDC00F7BF56 /* AddNewMoodViewController.swift */,
