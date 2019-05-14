@@ -26,6 +26,9 @@
                                     <rect key="frame" x="279" y="8" width="88" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Delete Mood"/>
+                                    <connections>
+                                        <action selector="deleteButton:" destination="9Ot-3Z-wiB" eventType="touchUpInside" id="BS0-UD-owN"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-qs-WoD">
                                     <rect key="frame" x="151" y="8" width="73" height="30"/>

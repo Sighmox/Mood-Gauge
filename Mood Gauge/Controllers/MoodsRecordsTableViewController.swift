@@ -27,7 +27,18 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
         }
     }
     
+    @IBAction func deleteButton(_ sender: Any) {
+    
+    }
+    
     func delete(moods: Moods) {
+        do {
+            managedContext!.delete(moods)
+            try managedContext!.save()
+        } catch {
+            managedContext!.reset()
+            showAlert(title: "Error", message: "Unable to delete mood")
+        }
         
     }
     
@@ -82,7 +93,7 @@ class MoodsRecordsTableViewController: UITableViewController, NSFetchedResultsCo
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "MoodTableCell", for: indexPath)
             cell.textLabel?.text = mood.comment
-            cell.detailTextLabel?.text = "\(mood.happiness) level of happiness out of 10"
+            cell.detailTextLabel?.text = "\(mood.happiness) out of 10 level of happiness"
             
             return cell
         }

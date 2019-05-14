@@ -47,9 +47,9 @@ class MoodMapViewController: UIViewController, CLLocationManagerDelegate, MKMapV
 //        }
 //    }
     
-    func delete(moods: Moods) {
-        
-    }
+//    func delete(moods: Moods) {
+//
+//    }
     
     
     
@@ -65,29 +65,29 @@ class MoodMapViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         super.viewDidLoad()
         
         
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        mapView.delegate = self
-        
-        let moodFetch = NSFetchRequest<Moods>(entityName: "Moods")
-        
-        fetchResultsController = NSFetchedResultsController(fetchRequest: moodFetch, managedObjectContext: managedContext!, sectionNameKeyPath: nil, cacheName: nil)
-        
-        fetchResultsController!.delegate = self
-        
-        do {
-            
-            try fetchResultsController!.performFetch()
-            moodObjects = fetchResultsController!.fetchedObjects!
-        } catch {
-            print("Error fetching moods \(error)")
-        }
-    }
-        
-    }
-    
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        moodObjects = controller.fetchedObjects as! [Moods]
+//        locationManager.delegate = self
+//        locationManager.requestWhenInUseAuthorization()
+//        mapView.delegate = self
+//
+//        let moodFetch = NSFetchRequest<Moods>(entityName: "Moods")
+//
+//        fetchResultsController = NSFetchedResultsController(fetchRequest: moodFetch, managedObjectContext: managedContext!, sectionNameKeyPath: nil, cacheName: nil)
+//
+//        fetchResultsController!.delegate = self
+//
+//        do {
+//
+//            try fetchResultsController!.performFetch()
+//            moodObjects = fetchResultsController!.fetchedObjects!
+//        } catch {
+//            print("Error fetching moods \(error)")
+//        }
+//    }
+//
+//    }
+//
+//    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+//        moodObjects = controller.fetchedObjects as! [Moods]
     
     
      //Displays the places moods were added
@@ -113,25 +113,23 @@ class MoodMapViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
 
 
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotation? {
-        if annotation is MKPointAnnotation {
-            let pinAnnotation = MKPinAnnotationView()
-            let myMood = moodObjects
-            let myLatitude = moodObjects.latitude
-            let myLongitude = moodObjects.longitude
-            let location = CLLocationCoordinate2D(latitude: myLatitude, longitude: myLongitude)
-            let coordinate = mapView.convert(, toRectTo: <#T##UIView?#>)
-            pinAnnotation.pinTintColor = UIColor.purple
-            pinAnnotation.annotation = annotation
-            pinAnnotation.canShowCallout = true
-            return pinAnnotation
-        }
-        return nil // use default view, so user location beacon isn't modified
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotation? {
+//        if annotation is MKPointAnnotation {
+//            let pinAnnotation = MKPinAnnotationView()
+//            let myLatitude = moodObjects
+//            let myLongitude = moodObjects
+//            let location = CLLocationCoordinate2D(latitude: <#T##CLLocationDegrees#>, longitude: <#T##CLLocationDegrees#>)
+//            pinAnnotation.pinTintColor = UIColor.red
+//            pinAnnotation.annotation = annotation
+//            pinAnnotation.canShowCallout = true
+//            return pinAnnotation
+//        }
+//        return nil // use default view, so user location beacon isn't modified
+//    }
     
     }
-    
-    
-        
+
+
+}
 
 
