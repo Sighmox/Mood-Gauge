@@ -21,7 +21,10 @@
 		79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */; };
 		79196E7C22822C8A00F7BF56 /* MoodDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */; };
 		79196E7E2282392A00F7BF56 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79196E7D2282392A00F7BF56 /* AlertViewController.swift */; };
-		79E091D7228B463D00785DF0 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E091D6228B463D00785DF0 /* ReadMe.swift */; };
+		79E091D7228B463D00785DF0 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = 79E091D6228B463D00785DF0 /* ReadMe.md */; };
+		79E091DE228B93E700785DF0 /* Map ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E091DB228B93E700785DF0 /* Map ScreenShot.png */; };
+		79E091DF228B93E700785DF0 /* Add Mood ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E091DC228B93E700785DF0 /* Add Mood ScreenShot.png */; };
+		79E091E0228B93E700785DF0 /* Homepage ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E091DD228B93E700785DF0 /* Homepage ScreenShot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +65,10 @@
 		79196E7922790D4A00F7BF56 /* MoodsRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsRecordsTableViewController.swift; sourceTree = "<group>"; };
 		79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDelegate.swift; sourceTree = "<group>"; };
 		79196E7D2282392A00F7BF56 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
-		79E091D6228B463D00785DF0 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
+		79E091D6228B463D00785DF0 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		79E091DB228B93E700785DF0 /* Map ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Map ScreenShot.png"; path = "../../../../Map ScreenShot.png"; sourceTree = "<group>"; };
+		79E091DC228B93E700785DF0 /* Add Mood ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Add Mood ScreenShot.png"; path = "../../../../Add Mood ScreenShot.png"; sourceTree = "<group>"; };
+		79E091DD228B93E700785DF0 /* Homepage ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Homepage ScreenShot.png"; path = "../../../../Homepage ScreenShot.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +125,8 @@
 				79196E802282405700F7BF56 /* Model */,
 				79196E43227908FA00F7BF56 /* AppDelegate.swift */,
 				79196E47227908FA00F7BF56 /* Main.storyboard */,
-				79E091D6228B463D00785DF0 /* ReadMe.swift */,
+				79E091D6228B463D00785DF0 /* ReadMe.md */,
+				79E091D8228B915E00785DF0 /* myScreenshots */,
 				79196E7B22822C8A00F7BF56 /* MoodDelegate.swift */,
 				79196E4D227908FC00F7BF56 /* Assets.xcassets */,
 				79196E4F227908FC00F7BF56 /* LaunchScreen.storyboard */,
@@ -173,6 +180,16 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		79E091D8228B915E00785DF0 /* myScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				79E091DC228B93E700785DF0 /* Add Mood ScreenShot.png */,
+				79E091DD228B93E700785DF0 /* Homepage ScreenShot.png */,
+				79E091DB228B93E700785DF0 /* Map ScreenShot.png */,
+			);
+			path = myScreenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E091E0228B93E700785DF0 /* Homepage ScreenShot.png in Resources */,
 				79196E51227908FC00F7BF56 /* LaunchScreen.storyboard in Resources */,
+				79E091DE228B93E700785DF0 /* Map ScreenShot.png in Resources */,
 				79196E4E227908FC00F7BF56 /* Assets.xcassets in Resources */,
+				79E091DF228B93E700785DF0 /* Add Mood ScreenShot.png in Resources */,
 				79196E49227908FA00F7BF56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +331,7 @@
 				79196E7A22790D4A00F7BF56 /* MoodsRecordsTableViewController.swift in Sources */,
 				79196E44227908FA00F7BF56 /* AppDelegate.swift in Sources */,
 				79196E7C22822C8A00F7BF56 /* MoodDelegate.swift in Sources */,
-				79E091D7228B463D00785DF0 /* ReadMe.swift in Sources */,
+				79E091D7228B463D00785DF0 /* ReadMe.md in Sources */,
 				79196E7822790BDC00F7BF56 /* AddNewMoodViewController.swift in Sources */,
 				79196E4C227908FA00F7BF56 /* Mood_Gauge.xcdatamodeld in Sources */,
 			);
